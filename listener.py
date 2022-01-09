@@ -110,6 +110,7 @@ def main():
                 f.writelines(lines[1:])
             print('sleep ', sleep_seconds, ' seconds...')
             time.sleep(sleep_seconds)
+        time.sleep(sleep_seconds)
 
 
 if __name__ == '__main__':
