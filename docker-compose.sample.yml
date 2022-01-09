@@ -1,0 +1,8 @@
+version: '3.2'
+services:
+  migration:
+    build: .
+    command: bash -c "python listerner.py"
+    volumes:
+      - ./conf:/usr/src/app/conf # 配置文件位置,里面是config.yaml
+      - ./output:/usr/src/app/output # 登录记录插入日志位置
